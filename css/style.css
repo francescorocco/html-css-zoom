@@ -32,8 +32,9 @@ main{
 
 .container {
     height: 100vh;
-    width: 100vw;
-    overflow-x: scroll;
+    width: calc(100vw - 100px);
+    overflow-y: scroll;
+    margin: 0px 100px;
 }
 
 .column {
@@ -44,4 +45,14 @@ main{
     background-image: url(https://picsum.photos/250/150);
     background-size: contain;
     display: inline-block;
+}
+
+.column a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    background-color: rgba(63, 63, 63, 0.5);
+    padding: 5px;
 }
